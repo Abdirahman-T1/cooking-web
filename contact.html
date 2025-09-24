@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Heaven's kitchen
+    </title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+    <link rel = "stylesheet" type="text/css"  href="css/style.css" />
+    <script defer src="js/basic.js" ></script>
+    
+</head>
+<body>
+    <header id="main-header">
+            <h1>Heaven's kitchen</h1>
+    </header>
+    <main>
+        <h2>Contact us</h2>
+        <section id="input">
+        <form id="sign-in">
+            <p><strong>Enter Fullname</strong></p>
+            <input type ="text" name="name"required  placeholder="First Name"/>
+            <p><strong>Enter Email address</strong></p>
+			<input type="email"
+               placeholder="Email"
+               required
+               pattern=".+(\.ac\.uk|\.edu)"
+               title="Please enter a UK or US university email address."/>
+               <p><strong>Enter password</strong></p>
+            <input type ="password" name="pass1"required  placeholder="Password" > 
+            <p><strong>Confirm password</strong></p>
+			<input type="password"	name = "confirm_pass"required  placeholder="Confirm Password"  />   </br></br>  
+            <p><strong>Enter Phone Number</strong></p>
+               <input type="tel"
+               placeholder="Number"
+               required 
+               pattern="[0-9]{11}" 
+               title="Please enter a 9 digit Number."/>
+               <p><strong>Enter appointment date</strong></p>
+               <input type="date"
+               id="appointment-date" 
+               required
+               title="Please select a future date for your appointment."/>
+            </select></br> </br>
+            <label><strong>Enter your message: </strong> </br> </br>
+            <textarea name="txtAr"rows= "4"cols="40">   </textarea>
+            </label>
+        <p></p>
+        <input type= "submit" name= "Submit"/> 
+        </form>
+    </section>
+    </main>
+    <footer id="footer">
+        <nav>
+            <p>click <a href="index.html"> here</a> to go to homepage.</p>
+            <p>click <a href="recipes.html"> here</a> to see the recipes.</p>
+        </nav>
+    </footer>
+</body>
